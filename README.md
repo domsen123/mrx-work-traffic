@@ -16,7 +16,17 @@ Here is an example of an entry in `config.js`
 	position: 'top_center',
 	header: 'Arbeitsweg',
 	config: {
-		apikey: 'API_KEY_FROM_GOOGLE'
+		apikey: 'API_KEY_FROM_GOOGLE',
+		origin: 'Platz der Republik 1, 11011 Berlin',
+		startTime: '00:00',
+		endTime: '23:59',
+		destinations: [
+			{
+				destination: 'Platzl 9, 80331 München',
+				label: 'Hofbräuhaus',
+				time: null
+			}
+		]
 	}
 },
 ```
