@@ -9,7 +9,7 @@
 
 Module.register('mrx-work-traffic', {
 	defaults: {
-		apikey: 'AIzaSyA6SQpGC3NhKFD7uOWcb0P20hoVcGXVE0M',
+		apikey: '',
 		origin: 'Platz der Republik 1, 11011 Berlin',
 		startTime: '00:00',
 		endTime: '23:59',
