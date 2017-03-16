@@ -115,7 +115,7 @@ Module.register('mrx-work-traffic', {
 	socketNotificationReceived: function(notification, payload) {
 		if( notification === 'GOOGLE_TRAFFIC_LIST' ){
 			for(var i = 0; i<this.config.destinations.length; i++) {
-				if( this.config.destinations[i].label === payload.label)
+				if( this.config.destinations[i].label === decodeURIComponent(payload.label))
 					this.config.destinations[i].time = Math.floor( payload.duration / 60 );
 			}
 			this.updateDom();
