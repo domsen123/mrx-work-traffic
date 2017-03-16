@@ -47,7 +47,10 @@ Module.register('mrx-work-traffic', {
 				var _url = 'https://maps.googleapis.com/maps/api/directions/json' + this.getParams(this.config.destinations[i].destination);
 				this.payload.push( {url: _url, label: this.config.destinations[i].label} );
 			}
-			this.askGoogle();
+			setInterval(function(){
+				this.askGoogle();
+			},600000);
+			
 		}
 		else{
 			this.hide(0);
