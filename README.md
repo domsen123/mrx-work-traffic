@@ -23,8 +23,7 @@ Here is an example of an entry in `config.js`
 		destinations: [
 			{
 				destination: 'Platzl 9, 80331 München',
-				label: 'Hofbräuhaus',
-				time: null
+				label: 'Hofbräuhaus'
 			}
 		]
 	}
